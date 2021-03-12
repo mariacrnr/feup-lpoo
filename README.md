@@ -1,1 +1,1 @@
-Work done for the Object-Oriented Programming Laboratory Curricular Unit @ Feup.
+Work done for the Object-Oriented Programming Laboratory Curricular Unit @FEUP.

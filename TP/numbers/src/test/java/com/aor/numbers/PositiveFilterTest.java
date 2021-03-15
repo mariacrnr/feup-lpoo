@@ -14,5 +14,6 @@ class PositiveFilterTest {
         Assertions.assertEquals(false, pos.accept(-1));
         Assertions.assertEquals(false, pos.accept(-10));
         Assertions.assertEquals(true, pos.accept(3));
+        Assertions.assertEquals(false, pos.accept(0));
     }
 }

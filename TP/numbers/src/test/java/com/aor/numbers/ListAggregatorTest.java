@@ -30,6 +30,10 @@ public class ListAggregatorTest {
         int max = aggregator.max(list);
 
         Assertions.assertEquals(4, max);
+
+        max = aggregator.max(Arrays.asList(1,2,2));
+
+        Assertions.assertEquals(2, max);
     }
 
     @Test
@@ -40,6 +44,10 @@ public class ListAggregatorTest {
         int min = aggregator.min(list);
 
         Assertions.assertEquals(1, min);
+
+        min = aggregator.min(Arrays.asList(-1,-1,4));
+
+        Assertions.assertEquals(-1,min);
     }
 
     @Test

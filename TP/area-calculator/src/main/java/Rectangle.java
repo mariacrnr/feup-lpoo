@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle implements Shape {
     private double width;
     private double height;
 
@@ -13,5 +13,10 @@ public class Rectangle {
 
     public double getHeight() {
         return height;
+    }
+
+    @Override
+    public double getArea() {
+        return this.height * this.width;
     }
 }

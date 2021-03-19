@@ -4,9 +4,11 @@ public class Aplication {
 
         Circle circle = new Circle(2);
         Square square = new Square(6);
+        Triangle triangle = new Triangle(4,6);
 
         aggregator.addShape(circle);
         aggregator.addShape(square);
+        aggregator.addShape(triangle);
 
         AreaStringOutputter stringOutputter = new AreaStringOutputter(aggregator);
         AreaXMLOutputter xmlOutputter = new AreaXMLOutputter(aggregator);

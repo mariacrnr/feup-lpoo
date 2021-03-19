@@ -5,6 +5,6 @@ public class Aplication {
         Square square = new Square(6);
         aggregator.addShape(circle);
         aggregator.addShape(square);
-        System.out.println(aggregator.output());
+        System.out.println(aggregator.outputXML());
     }
 }

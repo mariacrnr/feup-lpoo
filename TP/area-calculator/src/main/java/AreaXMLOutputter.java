@@ -4,7 +4,7 @@ public class AreaXMLOutputter {
         this.aggregator = aggregator;
     }
 
-    public String output() {
+    public String output(){
         return "<area>" + aggregator.sum() + "</area>";
     }
 }

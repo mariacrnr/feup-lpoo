@@ -8,7 +8,7 @@ public class AreaAggregator {
         shapes.add(shape);
     }
 
-    public double sum() {
+    public double sum(){
         double sum = 0;
         for (Shape shape: shapes) {
                 sum += shape.getArea();

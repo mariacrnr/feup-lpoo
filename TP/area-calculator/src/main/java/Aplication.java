@@ -5,6 +5,7 @@ public class Aplication {
         Circle circle = new Circle(2);
         Square square = new Square(6);
         Triangle triangle = new Triangle(4,6);
+        House house = new House(90);
 
         aggregator.addShape(circle);
         aggregator.addShape(square);

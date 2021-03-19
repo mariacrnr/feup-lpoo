@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface HasArea {
+public interface HasArea {
+    double getArea();
 }

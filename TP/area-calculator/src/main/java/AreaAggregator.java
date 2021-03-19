@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class AreaAggregator {
     private List<Shape> shapes = new ArrayList<>();
 
@@ -12,6 +15,8 @@ public class AreaAggregator {
                 sum += Math.PI * Math.pow(((Circle) shape).getRadius(), 2);
             } else if (shape.getClass().equals(Square.class)) {
                 sum += Math.pow(((Square) shape).getSide(), 2);
+            } else if (shape.getClass().equals(Ellipse.class)){
+                sum += Math.PI * ((Ellipse) shape).getXradius() * ((Ellipse) shape).getYradius();
             }
         }
         return sum;

@@ -6,7 +6,7 @@ public abstract class Bar {
     private List<BarObserver> observers;
     Bar(){
         this.isHappyHour = false;
-        this.observers =  new ArrayList<>();
+        this.observers =  new ArrayList<BarObserver>();
     }
     public boolean isHappyHour() {
         return this.isHappyHour;

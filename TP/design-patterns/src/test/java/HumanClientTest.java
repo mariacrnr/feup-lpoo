@@ -37,4 +37,5 @@ class HumanClientTest {
         Mockito.verify(clientMock, Mockito.never()).happyHourStarted(bar);
         Mockito.verify(clientMock, Mockito.never()).happyHourEnded(bar);
     }
+
 }

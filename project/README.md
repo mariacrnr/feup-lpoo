@@ -7,7 +7,7 @@ The project was made for the Object-Oriented Programming Laboratory Curricular U
 by André Santos (up201907879@edu.fe.up.pt), Maria Carneiro (up201907726@edu.fe.up.pt) and Rodrigo
 Andrade (up201904967@edu.fe.up.pt).
 
-![Minesweeper](/docs/screenshots/mainMenu.png)
+![Minesweeper](/project/docs/screenshots/mainMenu.png)
 
 ## Game Demo
-![GameDemo](/docs/screenshots/game-demo.gif)
+![GameDemo](/project/docs/screenshots/game-demo.gif)

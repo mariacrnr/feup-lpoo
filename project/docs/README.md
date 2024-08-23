@@ -16,17 +16,17 @@ and the density of mines for each board dimensions.
 * **Controls** - Shows all the relevant controls to ease the understanding of the gameplay.
 * **Exit** - Closes the terminal window and ends the game.
   
-![MainMenu](/docs/screenshots/mainMenu.png)
+![MainMenu](/project/docs/screenshots/mainMenu.png)
 
 > **Board height and width range from 6 to 20 tiles. The number of mines ranges from 1 to 399 mines.**
 
-![SettingsMenu](/docs/screenshots/settingsMenu.png)
+![SettingsMenu](/project/docs/screenshots/settingsMenu.png)
 
 > **Best scores are smaller numbers since the score takes into account winning the game in less time.**
 
-![HighscoresMenu](/docs/screenshots/highscoresMenu.png)
+![HighscoresMenu](/project/docs/screenshots/highscoresMenu.png)
 
-![ControlsMenu](/docs/screenshots/controlsMenu.png)
+![ControlsMenu](/project/docs/screenshots/controlsMenu.png)
 
 ### Keyboard Controls
 * **Moving** - Arrows are used to move between tiles as well as moving in the menus and selecting different
@@ -40,11 +40,11 @@ and the density of mines for each board dimensions.
 
 > **Cursor, Opened and Flagged tiles**
 
-![Tiles](/docs/screenshots/tiles.png)
+![Tiles](/project/docs/screenshots/tiles.png)
 
 > **The line is where the name is written on screen. Inserted names have a maximum of 10 letters.**
 
-![NewHighScore](/docs/screenshots/newhighscoreMenu.png)
+![NewHighScore](/project/docs/screenshots/newhighscoreMenu.png)
 
 ### Game Features
 * **Timer** - The time passed since the start of each game is counted and displayed on the screen.
@@ -57,11 +57,11 @@ and the density of mines for each board dimensions.
 > Unnumbered tiles were cascaded open, since they have no surrounding mines. 58 seconds have elapsed since 
 > the beginning of the game.**
 
-![GameFeatures](/docs/screenshots/gameFeatures.png)
+![GameFeatures](/project/docs/screenshots/gameFeatures.png)
 
 > **The score obtained is only shown if the player wins the game.**
 
-![GameOverMenu](/docs/screenshots/gameoverMenu.png)
+![GameOverMenu](/project/docs/screenshots/gameoverMenu.png)
 
 ### Overall Features
 * **Quit** - Closing the terminal window at any point ends the program.
@@ -88,7 +88,7 @@ the program in subsystems.
 The diagram shows the pattern applied to the game. To avoid using the Lanterna framework directly in every part of the 
 code that requested it, we used it as a Facade class, representing a single terminal window.
 
-![Facade](/docs/UML/Facade.png)
+![Facade](/project/docs/UML/Facade.png)
 
 The classes can be found in the following files:
 * [GUI](/src/main/java/lpoo/gui/GUI.java)
@@ -119,11 +119,11 @@ open, closed or flagged. State transitions happen between tiles in different sta
 > Closed tiles can become open or flagged, depending on which key the player presses.
 > Flagged tiles only change state when their flag is removed, becoming closed tiles again.**
 
-![StateMachineTiles](/docs/UML/TilesStateMachine.png)
+![StateMachineTiles](/project/docs/UML/TilesStateMachine.png)
 
 The diagram shows the pattern applied to the game.
 
-![StateTiles](/docs/UML/StateTiles.png)
+![StateTiles](/project/docs/UML/StateTiles.png)
 
 The classes can be found in the following files:
 * [Tile](/src/main/java/lpoo/model/game/Tile.java)
@@ -155,7 +155,7 @@ like pushing and popping commands from a stack holder.
 The diagram shows the pattern applied to the game. GameController acts as the invoker, client and receiver
 of the Concrete Commands Open, Flag and all the Cursor Commands, that implement the Command interface.
 
-![Command](/docs/UML/Command.png)
+![Command](/project/docs/UML/Command.png)
 
 The classes can be found in the following files:
 
@@ -191,11 +191,11 @@ the execution, closing the terminal window also closes the game and, therefore, 
 On that account, the diagram should have a connection from all the states to the final state, but we chose not to display it 
 since it hinders the visualization of the diagram. 
 
-![GameStateMachine](/docs/UML/GameStateMachine.png)
+![GameStateMachine](/project/docs/UML/GameStateMachine.png)
 
 The diagram shows the pattern applied to the game.
 
-![GameState](/docs/UML/GameState.png)
+![GameState](/project/docs/UML/GameState.png)
 
 The classes can be found in the following files:
 
@@ -233,7 +233,7 @@ components and allowing for efficient code reuse. Those three elements can be de
 Each element of the MVC corresponds to a directory containing the files that implement each part of the Model, View and
 Controller.
 
-![MVC](/docs/UML/MVC.png)
+![MVC](/project/docs/UML/MVC.png)
 
 #### Consequences
 Using MVC can be complex when considering big scale programs, where the time it takes to explore its implementation and 
@@ -293,7 +293,7 @@ a few situations where merging the code didn't pay off, because it would comprom
 menu interface look.
 
 ## Game Demo
-![GameDemo](/docs/screenshots/game-demo.gif)
+![GameDemo](/project/docs/screenshots/game-demo.gif)
 
 ## Testing
 * [Test Report](https://rodrigotuna.github.io/test/)
